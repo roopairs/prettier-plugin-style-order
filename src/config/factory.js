@@ -15,15 +15,7 @@ module.exports = () =>
     ['Visual', visual],
     ['Animation', animation],
     ['Misc', misc],
-  ]
-    .map(([groupName, properties]) => ({
-      emptyLineBefore: 'always',
-      properties,
-      groupName,
-    }))
-    .reduce(
-      (acc, { properties }) => ({
-        'properties-order': [...acc['properties-order'], ...properties],
-      }),
-      { 'order': ['custom-properties'], 'properties-order': [], 'unspecified-properties-position': 'bottom' },
-    )
+  ].map(([, properties]) => ({
+    emptyLineBefore: true,
+    properties,
+  }))
