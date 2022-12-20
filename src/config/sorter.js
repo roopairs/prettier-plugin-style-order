@@ -6,6 +6,9 @@ module.exports = (value, opts = {}) => {
   return postcss({
     plugins: [
       sorting({
+        'at-rule-nested-empty-line-before': true,
+        'clean-empty-lines': true,
+        'rule-nested-empty-line-before': [true, { except: ['after-rule'] }],
         'properties-order': createConfig(),
       }),
     ],
