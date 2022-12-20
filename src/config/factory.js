@@ -1,6 +1,9 @@
 const special = require('../groups/special')
 const positioning = require('../groups/positioning')
-const boxModel = require('../groups/boxModel')
+const display = require('../groups/display')
+const sizing = require('../groups/sizing')
+const spacing = require('../groups/spacing')
+const box = require('../groups/box')
 const typography = require('../groups/typography')
 const visual = require('../groups/visual')
 const animation = require('../groups/animation')
@@ -10,7 +13,10 @@ module.exports = () =>
   [
     ['Special', special],
     ['Positioning', positioning],
-    ['Box Model', boxModel],
+    ['Display', display],
+    ['Sizing', sizing],
+    ['Spacing', spacing],
+    ['Box', box],
     ['Typography', typography],
     ['Visual', visual],
     ['Animation', animation],
