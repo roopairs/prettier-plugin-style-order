@@ -9,6 +9,7 @@ module.exports = (value, opts = {}) => {
         'at-rule-nested-empty-line-before': true,
         'clean-empty-lines': true,
         'rule-nested-empty-line-before': [true, { except: ['after-rule'] }],
+        'unspecified-properties-position': 'bottom',
         'properties-order': createConfig(),
       }),
     ],
