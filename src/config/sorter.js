@@ -7,5 +7,7 @@ module.exports = () =>
     'clean-empty-lines': true,
     'rule-nested-empty-line-before': true,
     'unspecified-properties-position': 'bottom',
+    'comment-empty-line-before': [true, { ignore: ['after-comment'] }],
+    'custom-property-empty-line-before': [true, { except: ['after-custom-property'] }],
     'properties-order': createConfig(),
   })
