@@ -5,7 +5,7 @@ module.exports = () =>
   sorting({
     'at-rule-nested-empty-line-before': true,
     'clean-empty-lines': true,
-    'rule-nested-empty-line-before': [true, { except: ['after-rule'] }],
+    'rule-nested-empty-line-before': true,
     'unspecified-properties-position': 'bottom',
     'properties-order': createConfig(),
   })
