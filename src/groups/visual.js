@@ -1,48 +1,16 @@
-const borderProps = require('./border')
-
-const a = [
-  'list-style',
-  'list-style-position',
-  'list-style-type',
-  'list-style-image',
-  'table-layout',
-  'empty-cells',
-  'caption-side',
-  'background',
-  'background-color',
-  'background-image',
-  'background-repeat',
-  'background-position',
-  'background-position-x',
-  'background-position-y',
-  'background-size',
-  'background-clip',
-  'background-origin',
-  'background-attachment',
-  'background-blend-mode',
-]
-
-const b = [
-  'outline',
-  'outline-width',
-  'outline-style',
-  'outline-color',
-  'outline-offset',
-  'box-shadow',
-  'box-decoration-break',
+module.exports = [
   'transform',
   'transform-origin',
   'transform-style',
+  'box-decoration-break',
   'backface-visibility',
   'perspective',
   'perspective-origin',
   'visibility',
-  'cursor',
   'opacity',
+  'cursor',
   'filter',
   'isolation',
   'backdrop-filter',
   'mix-blend-mode',
 ]
-
-module.exports = [].concat(a, borderProps, b)
