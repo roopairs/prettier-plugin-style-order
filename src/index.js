@@ -1,20 +1,31 @@
 const prettier = require('prettier/parser-postcss')
-const sorter = require('./config/sorter')
+const postcss = require('postcss')
+const postcssScss = require('postcss-scss')
+const postcssLess = require('postcss-less')
+const sorting = require('./config/sorter')
 
-const { parsers } = prettier
+const syntaxes = {
+  css: postcss,
+  scss: postcssScss,
+  less: postcssLess,
+}
 
-const languages = Object.keys(parsers)
+function getParser(lang) {
+  const prettierParser = prettier.parsers[lang]
 
-exports.parsers = {}
-for (const lang of languages) {
-  const parser = parsers[lang]
-  exports.parsers[lang] = {
-    ...parser,
-    preprocess(text, options) {
-      if (parser.preprocess) {
-        text = parser.preprocess(text, options)
-      }
-      return sorter(text)
-    },
+  const parser = {
+    ...prettierParser,
+    preprocess: (text, options) =>
+      postcss({
+        plugins: [sorting()],
+      }).process(text, { syntax: syntaxes[lang] }).css,
   }
+
+  return parser
+}
+
+exports.parsers = {
+  css: getParser('css'),
+  scss: getParser('scss'),
+  less: getParser('less'),
 }
