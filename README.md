@@ -1,6 +1,6 @@
 # Style Order for Prettier
 
-__Style Order__ is a [Prettier](https://prettier.io/) plugin which sorts property declarations and groups related properties.
+**Style Order** is a [Prettier](https://prettier.io/) plugin which sorts property declarations and groups related properties.
 
 ## Installation
 
@@ -17,3 +17,4 @@ If it doesn't seem to be working, refer to Prettier's [plugin docs](https://pret
 - [`postcss-sorting`](https://github.com/hudochenkov/postcss-sorting)
 - [`stylelint-config-rational-order`](https://github.com/constverum/stylelint-config-rational-order)
 - [`prettier-plugin-package`](https://github.com/shellscape/prettier-plugin-package)
+- [`prettier-plugin-style-order`](https://github.com/natemoo-re/prettier-plugin-style-order)
