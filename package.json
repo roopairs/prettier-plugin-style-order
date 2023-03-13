@@ -1,5 +1,5 @@
 {
-  "name": "@azabraao/prettier-plugin-style-order",
+  "name": "@roopairs/prettier-plugin-style-order",
   "version": "0.6.0",
   "description": "Prettier plugin which sorts related style property declarations",
   "keywords": [
@@ -18,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/azabraao/prettier-plugin-style-order.git"
+    "url": "git+https://github.com/roopairs/prettier-plugin-style-order.git"
   },
   "bugs": {
-    "url": "https://github.com/azabraao/prettier-plugin-style-order/issues"
+    "url": "https://github.com/roopairs/prettier-plugin-style-order/issues"
   },
-  "homepage": "https://github.com/azabraao/prettier-plugin-style-order",
+  "homepage": "https://github.com/roopairs/prettier-plugin-style-order",
   "files": [
     "src"
   ],
