@@ -1,1 +1,1 @@
-module.exports = ['width', 'min-width', 'max-width', 'height', 'min-height', 'max-height']
+module.exports = ['width', 'min-width', 'max-width', 'height', 'min-height', 'max-height', 'aspect-ratio']
