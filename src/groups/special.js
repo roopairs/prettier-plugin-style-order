@@ -1,1 +1,1 @@
-module.exports = ['composes', '@import', '@extend', '@mixin', '@at-root'];
+module.exports = ['all', 'composes', '@import', '@extend', '@mixin', '@at-root'];

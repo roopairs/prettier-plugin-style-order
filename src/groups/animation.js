@@ -13,4 +13,7 @@ module.exports = [
   'animation-iteration-count',
   'animation-direction',
   'animation-fill-mode',
+  'animation-composition',
+  'animation-timeline',
+  'scroll-behavior',
 ];

@@ -1,8 +1,6 @@
 module.exports = [
-  'appearance',
   'content',
   'clip',
-  'clip-path',
   'counter-reset',
   'counter-increment',
   'resize',
@@ -17,8 +15,7 @@ module.exports = [
   'touch-action',
   'will-change',
   'zoom',
-  'fill',
-  'fill-rule',
-  'clip-rule',
-  'stroke',
+  'page-break-after',
+  'page-break-before', 
+  'page-break-inside',
 ];
